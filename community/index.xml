@@ -5,7 +5,6 @@
     <link>http://open-cluster-management.io/community/</link>
     <description>Recent content in Community on Open Cluster Management</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     
 	<atom:link href="http://open-cluster-management.io/community/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,24 +15,18 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://open-cluster-management.io/community/releases/</guid>
-      <description>Open Cluster Management has approximately a three to four month release cycle. The current release is v0.3.0. Continue reading to view upcoming releases:
-  v0.4.0 on July 2021
-  v0.5.0 on October 2021
-  </description>
+      <description>Open Cluster Management has approximately a three to four month release cycle. The current release is v0.5.0. Continue reading to view upcoming releases:
+v0.6.0, on 21st, January 2022 The Open Cluster Management team is proud to announce the release of OCM v0.6.0! We made many enhancements on core components and introduced some new addons.
+ First release of cluster-proxy addon, Cluster-Proxy addon is to provide a reverse tunnel from the managed cluster to the hub using apiserver-network-proxy, so user can easily visit the apiserver of the managedcluster from the hub without complicated infrstructure configuration.</description>
     </item>
     
     <item>
-      <title>Resources</title>
-      <link>http://open-cluster-management.io/community/resource/</link>
+      <title>Roadmap</title>
+      <link>http://open-cluster-management.io/community/roadmap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://open-cluster-management.io/community/resource/</guid>
-      <description>Join conversations with the other people who are involved in the creation, maintenance, and future of open-cluster-management. We want to hear from you. How you are using open-cluster-management? What we can do to make it better? To understand how the Open Cluster Management community is governed, visit the Community repo.
-Get Connected    See the following options to connect with the community:
-GitHub
-Mailing group
-Slack
-Community meetings</description>
+      <guid>http://open-cluster-management.io/community/roadmap/</guid>
+      <description>The Open Cluster Management community uses GitHub Project to track the progress of the project.</description>
     </item>
     
   </channel>
