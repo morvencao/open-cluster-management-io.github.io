@@ -50,6 +50,9 @@
           <li class="nav-item pe-2">
             <a href="/concepts" class="nav-link text-light">Document</a>
           </li>
+          <li class="nav-item pe-2">
+            <a href="/blog" class="nav-link text-light">Blog</a>
+          </li>
           <li class="nav-item dropdown pe-2">
             
             <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">English</a>
@@ -62,7 +65,7 @@
             </ul>
           </li>
           <li class="nav-item pe-2">
-            <a class="nav-link text-light" href="https://www.youtube.com/channel/UC7xxOh2jBM5Jfwt3fsBzOZw" target="_blank">
+            <a class="nav-link text-light" href="https://www.youtube.com/c/OpenClusterManagement" target="_blank">
                 <i class="bi bi-youtube"></i>
             </a>
           </li>
@@ -72,7 +75,7 @@
             </a>
           </li>
           <li class="nav-item pe-2">
-            <a class="nav-link text-light" href="https://kubernetes.slack.com/?redir=%2Farchives%2FC01GE7YSUUF" target="_blank">
+            <a class="nav-link text-light" href="https://kubernetes.slack.com/channels/open-cluster-mgmt" target="_blank">
               <i class="bi bi-slack"></i>
             </a>
           </li>
@@ -102,16 +105,25 @@
                     <a class="navlink" href="/concepts/architecture">Architecture</a>
                 </li>
                 <li>
+                    <a class="navlink" href="/concepts/clusterclaim">ClusterClaim</a>
+                </li>
+                <li>
                     <a class="navlink" href="/concepts/managedcluster">ManagedCluster</a>
                 </li>
                 <li>
                     <a class="navlink" href="/concepts/manifestwork">ManifestWork</a>
                 </li>
                 <li>
+                    <a class="navlink" href="/concepts/managedclusterset">ManagedClusterSet</a>
+                </li>
+                <li>
                     <a class="navlink" href="/concepts/placement">Placement</a>
                 </li>
                 <li>
                     <a class="navlink" href="/concepts/addon">Add-ons</a>
+                </li>
+                <li>
+                    <a class="navlink" href="/concepts/policy">Policy</a>
                 </li>
             </ul>
         </li>
@@ -122,13 +134,13 @@
                     <a class="navlink" href="/getting-started/quick-start">Quick Start</a>
                 </li>
                 <li>
-                    <a class="navlink" href="/getting-started/core">Core Components</a>
+                    <a class="navlink" href="/getting-started/installation">Installation</a>
                     <ul class="collapse">
                         <li>
-                            <a class="navlink" href="/getting-started/core/cluster-manager">Cluster Manager</a>
+                            <a class="navlink" href="/getting-started/installation/start-the-control-plane">Start the Control Plane</a>
                         </li>
                         <li>
-                            <a class="navlink" href="/getting-started/core/register-cluster">Klusterlet Agent</a>
+                            <a class="navlink" href="/getting-started/installation/register-a-cluster">Register a Cluster</a>
                         </li>
                     </ul>
                 </li>
@@ -152,6 +164,25 @@
                         </li>
                     </ul>
                 </li>
+                <li>
+                    <a class="navlink" href="/getting-started/administration">Administration</a>
+                    <ul class="collapse">
+                        <li>
+                            <a class="navlink" href="/getting-started/administration/upgrading">Upgrading</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li id="developer-guides">
+            <a class="navlink" href="/developer-guides">Developer Guides</a>
+            <ul class="collapse">
+                <li>
+                    <a class="navlink" href="/developer-guides/addon">Add-on Developer Guide</a>
+                </li>
+                <li>
+                    <a class="navlink" href="/developer-guides/vscode-extension">VScode Extension</a>
+                </li>
             </ul>
         </li>
         <li id="scenarios">
@@ -161,7 +192,16 @@
                     <a class="navlink" href="/scenarios/deploy-kubernetes-resources">Deploy Kubernetes Resources</a>
                 </li>
                 <li>
+                    <a class="navlink" href="/scenarios/distribute-workload-with-placement">Distribute Workload With Placement</a>
+                </li>
+                <li>
+                    <a class="navlink" href="/scenarios/extend-multicluster-scheduling-capabilities">Extend Multicluster Scheduling Capabilities</a>
+                </li>
+                <li>
                     <a class="navlink" href="/scenarios/extending-managed-clusters">Extend Managed Clusters</a>
+                </li>
+                <li>
+                    <a class="navlink" href="/scenarios/integration-with-argocd">Integration with Argo CD</a>
                 </li>
                 <li>
                     <a class="navlink" href="/scenarios/pushing-kube-api-requests">Pushing Kube API Requests to the Managed Clusters</a>
@@ -189,10 +229,10 @@
             <a class="navlink resource" href="https://github.com/open-cluster-management-io" target="_blank"><i class="bi bi-github"></i><span style="padding-left: 10px;">GitHub</span></a>
         </li>
         <li>
-            <a class="navlink resource" href="https://kubernetes.slack.com/archives/C01GE7YSUUF" target="_blank"><i class="bi bi-slack"></i><span style="padding-left: 10px;">Slack</span></a>
+            <a class="navlink resource" href="https://kubernetes.slack.com/channels/open-cluster-mgmt" target="_blank"><i class="bi bi-slack"></i><span style="padding-left: 10px;">Slack</span></a>
         </li>
         <li>
-            <a class="navlink resource" href="https://www.youtube.com/channel/UC7xxOh2jBM5Jfwt3fsBzOZw" target="_blank"><i class="bi bi-youtube"></i><span style="padding-left: 10px;">YouTube</span></a>
+            <a class="navlink resource" href="https://www.youtube.com/c/OpenClusterManagement" target="_blank"><i class="bi bi-youtube"></i><span style="padding-left: 10px;">YouTube</span></a>
         </li>
         <li>
             <a class="navlink resource" href="https://groups.google.com/g/open-cluster-management" target="_blank"><i class="bi bi-envelope-fill"></i><span style="padding-left: 10px;">Mailing group</span></a>
@@ -220,7 +260,13 @@
                 <li><a href="#approving-registration">Approving registration</a></li>
               </ul>
             </li>
-            <li><a href="#cluster-heart-bearts-and-status">Cluster heart-bearts and status</a></li>
+            <li><a href="#cluster-heartbeats-and-status">Cluster heartbeats and status</a></li>
+            <li><a href="#cluster-taints-and-tolerations">Cluster taints and tolerations</a>
+              <ul>
+                <li><a href="#taints-of-managedclusters">Taints of ManagedClusters</a></li>
+                <li><a href="#tolerations-of-placements">Tolerations of Placements</a></li>
+              </ul>
+            </li>
             <li><a href="#cluster-removal">Cluster removal</a>
               <ul>
                 <li><a href="#unregister-from-hub-cluster">Unregister from hub cluster</a></li>
@@ -229,7 +275,8 @@
             </li>
           </ul>
         </li>
-        <li><a href="#managedclusterset">ManagedClusterSet</a></li>
+        <li><a href="#managed-clusters-certificate-rotation">Managed Cluster&rsquo;s certificate rotation</a></li>
+        <li><a href="#whats-next">What&rsquo;s next?</a></li>
       </ul></nav><hr></div>
 
 
@@ -237,7 +284,7 @@
 <h2 id="what-is-managedcluster">What is ManagedCluster?</h2>
 <p><code>ManagedCluster</code> is a cluster scoped API in the hub cluster representing the
 registered or pending-for-acceptance Kubernetes clusters in OCM. The
-<a href="https://open-cluster-management.io/getting-started/core/register-cluster/">klusterlet agent</a>
+<a href="https://open-cluster-management.io/getting-started/installation/register-a-cluster/">klusterlet agent</a>
 working in the managed cluster is expected to actively maintain/refresh the
 status of the corresponding <code>ManagedCluster</code> resource on the hub cluster.
 On the other hand, removing the <code>ManagedCluster</code> from the hub cluster indicates
@@ -258,7 +305,7 @@ registration agent which requires a bootstrap kubeconfig e.g.:</p>
 </code></pre></div><p>A minimal RBAC permission required for the subject in the bootstrap kubeconfig
 will be:</p>
 <ul>
-<li><code>CertficateSigningRequest</code>'s &ldquo;get&rdquo;, &ldquo;list&rdquo;, &ldquo;watch&rdquo;, &ldquo;create&rdquo;, &ldquo;update&rdquo;.</li>
+<li><code>CertificateSigningRequest</code>'s &ldquo;get&rdquo;, &ldquo;list&rdquo;, &ldquo;watch&rdquo;, &ldquo;create&rdquo;, &ldquo;update&rdquo;.</li>
 <li><code>ManagedCluster</code>'s &ldquo;get&rdquo;, &ldquo;list&rdquo;, &ldquo;create&rdquo;, &ldquo;update&rdquo;</li>
 </ul>
 <p>Note that ideally the bootstrap kubeconfig is supposed to live shortly
@@ -269,8 +316,8 @@ command-line tool <code>clusteradm</code> to manage the whole registration proce
 <h4 id="approving-registration">Approving registration</h4>
 <p>When we&rsquo;re registering a new cluster into OCM, the registration agent will be
 starting by creating an unaccepted <code>ManagedCluster</code> into the hub cluster along
-with a temporary <a href="https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/">CertficateSigningRequest (CSR)</a>
-resource. The cluster will be accepted by the hub control plan, if the
+with a temporary <a href="https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/">CertificateSigningRequest (CSR)</a>
+resource. The cluster will be accepted by the hub control plane, if the
 following requirements is meet:</p>
 <ul>
 <li>The CSR is approved and signed by any certificate provider setting filling
@@ -298,7 +345,7 @@ gracefully with permission and validity under control.</p>
 sub-project, which is the &ldquo;root dependency&rdquo; in the OCM world. It includes
 an agent in the managed cluster to register to the hub and a controller in
 the hub cluster to coordinate with the agent.</p>
-<h3 id="cluster-heart-bearts-and-status">Cluster heart-bearts and status</h3>
+<h3 id="cluster-heartbeats-and-status">Cluster heartbeats and status</h3>
 <p>By default, the registration will be reporting and refreshing its healthiness
 state to the hub cluster on a one-minute basis, and that interval can be easily
 overridden by setting <code>.spec.leaseDurationSeconds</code> on the <code>ManagedCluster</code>.</p>
@@ -306,7 +353,7 @@ overridden by setting <code>.spec.leaseDurationSeconds</code> on the <code>Manag
 in the status of the <code>ManagedCluster</code>, e.g.:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">  <span style="color:#66d9ef">status</span>:
     <span style="color:#66d9ef">version</span>:
-      <span style="color:#66d9ef">kubernetes</span>: v1<span style="color:#ae81ff">.20.11</span>-aliyun<span style="color:#ae81ff">.1</span>
+      <span style="color:#66d9ef">kubernetes</span>: v1<span style="color:#ae81ff">.20.11</span>
     <span style="color:#66d9ef">allocatable</span>:
       <span style="color:#66d9ef">cpu</span>: 11700m
       <span style="color:#66d9ef">ephemeral-storage</span>: <span style="color:#e6db74">&#34;342068531454&#34;</span>
@@ -322,7 +369,93 @@ in the status of the <code>ManagedCluster</code>, e.g.:</p>
       <span style="color:#66d9ef">memory</span>: 23777972Ki
       <span style="color:#66d9ef">pods</span>: <span style="color:#e6db74">&#34;192&#34;</span>
     <span style="color:#66d9ef">conditions</span>: ...
-</code></pre></div><h3 id="cluster-removal">Cluster removal</h3>
+</code></pre></div><h3 id="cluster-taints-and-tolerations">Cluster taints and tolerations</h3>
+<p>To support filtering unhealthy/not-reporting clusters and keep workloads from
+being placed in unhealthy or unreachable clusters, we introduce the similar
+concept of taint/toleration in Kubernetes. It also allows user to add a
+customized taint to deselect a cluster from placement. This is useful when the
+user wants to set a cluster to maintenance mode and evict workload from this
+cluster.</p>
+<p>In OCM, Taints and Tolerations work together to allow users to control the
+selection of managed clusters more flexibly.</p>
+<h4 id="taints-of-managedclusters">Taints of ManagedClusters</h4>
+<p>Taints are properties of ManagedClusters, they allow a Placement to repel a set
+of ManagedClusters. A Taint includes the following fields:</p>
+<ul>
+<li><strong>Key</strong> (required). The taint key applied to a cluster. e.g. bar or
+foo.example.com/bar.</li>
+<li><strong>Value</strong> (optional). The taint value corresponding to the taint key.</li>
+<li><strong>Effect</strong> (required). The Effect of the taint on Placements that do not
+tolerate the taint. Valid effects are
+<ul>
+<li><code>NoSelect</code>. It means Placements are not allowed to select a cluster unless
+they tolerate this taint. The cluster will be removed from the placement
+decision if it has already been selected by the Placement.</li>
+<li><code>PreferNoSelect</code>. It means the scheduler tries not to select the cluster,
+rather than prohibiting Placements from selecting the cluster entirely.
+(This is not implemented yet, currently clusters with effect <code>PreferNoSelect</code>
+will always be selected.)</li>
+<li><code>NoSelectIfNew</code>. It means Placements are not allowed to select the cluster
+unless: 1) they tolerate the taint; 2) they have already had the cluster in
+their cluster decisions;</li>
+</ul>
+</li>
+<li><strong>TimeAdded</strong> (required). The time at which the taint was added. It is set
+automatically and the user should not to set/update its value.</li>
+</ul>
+<p><strong>Builtin taints to reflect the status of ManagedClusters</strong></p>
+<p>There are two builtin taints, which will be automatically added to
+ManagedClusters, according to their conditions.</p>
+<ul>
+<li><code>cluster.open-cluster-management.io/unavailable</code>. The taint is added to a
+ManagedCluster when it is not available. To be specific, the cluster has a
+condition &lsquo;ManagedClusterConditionAvailable&rsquo; with status of &lsquo;False&rsquo;. The taint
+has the effect <code>NoSelect</code> and an empty value. Example,
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">apiVersion</span>: cluster.open-cluster-management.io/v1
+<span style="color:#66d9ef">kind</span>: ManagedCluster
+<span style="color:#66d9ef">metadata</span>:
+ <span style="color:#66d9ef">name</span>: cluster1
+<span style="color:#66d9ef">spec</span>:
+ <span style="color:#66d9ef">hubAcceptsClient</span>: <span style="color:#66d9ef">true</span>
+ <span style="color:#66d9ef">taints</span>:
+   - <span style="color:#66d9ef">effect</span>: NoSelect
+     <span style="color:#66d9ef">key</span>: cluster.open-cluster-management.io/unavailable
+     <span style="color:#66d9ef">timeAdded</span>: <span style="color:#e6db74">&#39;2022-02-21T08:11:54Z&#39;</span>
+</code></pre></div></li>
+<li><code>cluster.open-cluster-management.io/unreachable</code>. The taint is added to a
+ManagedCluster when it is not reachable. To be specific,
+<ul>
+<li>
+<ol>
+<li>The cluster has no condition &lsquo;ManagedClusterConditionAvailable&rsquo;;</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Or the status of condition &lsquo;ManagedClusterConditionAvailable&rsquo; is
+&lsquo;Unknown&rsquo;;
+The taint has the effect <code>NoSelect</code> and an empty value. Example,</li>
+</ol>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">apiVersion</span>: cluster.open-cluster-management.io/v1
+<span style="color:#66d9ef">kind</span>: ManagedCluster
+<span style="color:#66d9ef">metadata</span>:
+  <span style="color:#66d9ef">name</span>: cluster1
+<span style="color:#66d9ef">spec</span>:
+  <span style="color:#66d9ef">hubAcceptsClient</span>: <span style="color:#66d9ef">true</span>
+  <span style="color:#66d9ef">taints</span>:
+    - <span style="color:#66d9ef">effect</span>: NoSelect
+      <span style="color:#66d9ef">key</span>: cluster.open-cluster-management.io/unreachable
+      <span style="color:#66d9ef">timeAdded</span>: <span style="color:#e6db74">&#39;2022-02-21T08:11:06Z&#39;</span>
+</code></pre></div></li>
+</ul>
+<h4 id="tolerations-of-placements">Tolerations of Placements</h4>
+<p>Tolerations are applied to Placements, and allow Placements to select
+ManagedClusters with matching taints. Refer to <a href="../placement/#taintstolerations">Placement
+Taints/Tolerations</a> to see how it is used for
+cluster selection.</p>
+<h3 id="cluster-removal">Cluster removal</h3>
 <p>A previously registered cluster can opt-out cutting off the connection from
 either hub cluster or managed cluster. This is helpful for tackling emergency
 problems in your OCM environment, e.g.:</p>
@@ -334,7 +467,7 @@ problems in your OCM environment, e.g.:</p>
 </ul>
 <h4 id="unregister-from-hub-cluster">Unregister from hub cluster</h4>
 <p>A recommended way to unregister a managed cluster will flip the
-<code>.spec.hubAcceptsClient</code> bit back to <code>false</code>, which will be trggering the hub
+<code>.spec.hubAcceptsClient</code> bit back to <code>false</code>, which will be triggering the hub
 control plane to offload the managed cluster from effective management.
 Meanwhile, a permanent way to kick a managed cluster from the hub control plane
 is simply deleting its <code>ManagedCluster</code> resource.</p>
@@ -356,25 +489,16 @@ effective cluster role resource:</p>
 <p>The admin of the managed cluster can disable the prescriptions from hub cluster
 by scaling the OCM klusterlet agents to <code>0</code>. Or just permanently deleting the
 agent components from the managed cluster.</p>
-<h2 id="managedclusterset">ManagedClusterSet</h2>
-<p><code>ManagedClusterSet</code> is a cluster scoped API on the hub cluster to define a
-group of <code>ManagedCluster</code>s. Practically it&rsquo;s a common case for hub cluster to
-group the existing managed clusters according to their deploying environment
-or data-center. For instance, you can create <code>dev</code>, <code>staging</code>, <code>prod</code>
-<code>ManagedClusterSet</code> for different purposes. Or you can create <code>north-america</code>,
-<code>europe</code>, <code>apac</code> <code>ManagedClusterSet</code> based on the region of the <code>ManagedCluster</code>.</p>
-<p>To add a <code>ManagedCluster</code> to a <code>ManagedClusterSet</code>, user needs to set a label
-<code>cluster.open-cluster-management.io/clusterset={clusterset name}</code> on the
-<code>ManagedCluster</code>. The user must have the <code>create</code> permission to
-<code>managedclusterset/join</code> resource to add a <code>ManagedCluster</code> to a
-<code>ManagedClusterSet</code>.</p>
-<p>An example of a <code>ManagedClusterSet</code> resource is shown in the following example.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">apiVersion</span>: cluster.open-cluster-management.io/v1beta1
-<span style="color:#66d9ef">kind</span>: ManagedClusterSet
-<span style="color:#66d9ef">metadata</span>:
-  <span style="color:#66d9ef">name</span>: prod
-</code></pre></div><p>Furthermore, we can do advanced cluster matching/selecting within a
-<code>ManagedClusterSet</code> using the <a href="https://github.com/open-cluster-management-io/placement">placement</a>
+<h2 id="managed-clusters-certificate-rotation">Managed Cluster&rsquo;s certificate rotation</h2>
+<p>The certificates used by the agents from the managed cluster to talk to
+the hub control plane will be periodically rotated with an ephemeral and random
+identity. The following picture shows the automated certificate rotation works.</p>
+<div style="text-align: center; padding: 20px;">
+   <img src="/registration-process.png" alt="Registration Process" style="margin: 0 auto; width: 80%">
+</div>
+<h2 id="whats-next">What&rsquo;s next?</h2>
+<p>Furthermore, we can do advanced cluster matching/selecting within a
+<a href="./managedclusterset.md">managedclusterset</a> using the <a href="./placement.md">placement</a>
 module.</p>
 
 </div>

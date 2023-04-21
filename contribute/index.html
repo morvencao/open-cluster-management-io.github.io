@@ -50,6 +50,9 @@
           <li class="nav-item pe-2">
             <a href="/concepts" class="nav-link text-light">Document</a>
           </li>
+          <li class="nav-item pe-2">
+            <a href="/blog" class="nav-link text-light">Blog</a>
+          </li>
           <li class="nav-item dropdown pe-2">
             
             <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">English</a>
@@ -62,7 +65,7 @@
             </ul>
           </li>
           <li class="nav-item pe-2">
-            <a class="nav-link text-light" href="https://www.youtube.com/channel/UC7xxOh2jBM5Jfwt3fsBzOZw" target="_blank">
+            <a class="nav-link text-light" href="https://www.youtube.com/c/OpenClusterManagement" target="_blank">
                 <i class="bi bi-youtube"></i>
             </a>
           </li>
@@ -72,7 +75,7 @@
             </a>
           </li>
           <li class="nav-item pe-2">
-            <a class="nav-link text-light" href="https://kubernetes.slack.com/?redir=%2Farchives%2FC01GE7YSUUF" target="_blank">
+            <a class="nav-link text-light" href="https://kubernetes.slack.com/channels/open-cluster-mgmt" target="_blank">
               <i class="bi bi-slack"></i>
             </a>
           </li>
@@ -102,16 +105,25 @@
                     <a class="navlink" href="/concepts/architecture">Architecture</a>
                 </li>
                 <li>
+                    <a class="navlink" href="/concepts/clusterclaim">ClusterClaim</a>
+                </li>
+                <li>
                     <a class="navlink" href="/concepts/managedcluster">ManagedCluster</a>
                 </li>
                 <li>
                     <a class="navlink" href="/concepts/manifestwork">ManifestWork</a>
                 </li>
                 <li>
+                    <a class="navlink" href="/concepts/managedclusterset">ManagedClusterSet</a>
+                </li>
+                <li>
                     <a class="navlink" href="/concepts/placement">Placement</a>
                 </li>
                 <li>
                     <a class="navlink" href="/concepts/addon">Add-ons</a>
+                </li>
+                <li>
+                    <a class="navlink" href="/concepts/policy">Policy</a>
                 </li>
             </ul>
         </li>
@@ -122,13 +134,13 @@
                     <a class="navlink" href="/getting-started/quick-start">Quick Start</a>
                 </li>
                 <li>
-                    <a class="navlink" href="/getting-started/core">Core Components</a>
+                    <a class="navlink" href="/getting-started/installation">Installation</a>
                     <ul class="collapse">
                         <li>
-                            <a class="navlink" href="/getting-started/core/cluster-manager">Cluster Manager</a>
+                            <a class="navlink" href="/getting-started/installation/start-the-control-plane">Start the Control Plane</a>
                         </li>
                         <li>
-                            <a class="navlink" href="/getting-started/core/register-cluster">Klusterlet Agent</a>
+                            <a class="navlink" href="/getting-started/installation/register-a-cluster">Register a Cluster</a>
                         </li>
                     </ul>
                 </li>
@@ -152,6 +164,25 @@
                         </li>
                     </ul>
                 </li>
+                <li>
+                    <a class="navlink" href="/getting-started/administration">Administration</a>
+                    <ul class="collapse">
+                        <li>
+                            <a class="navlink" href="/getting-started/administration/upgrading">Upgrading</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li id="developer-guides">
+            <a class="navlink" href="/developer-guides">Developer Guides</a>
+            <ul class="collapse">
+                <li>
+                    <a class="navlink" href="/developer-guides/addon">Add-on Developer Guide</a>
+                </li>
+                <li>
+                    <a class="navlink" href="/developer-guides/vscode-extension">VScode Extension</a>
+                </li>
             </ul>
         </li>
         <li id="scenarios">
@@ -161,7 +192,16 @@
                     <a class="navlink" href="/scenarios/deploy-kubernetes-resources">Deploy Kubernetes Resources</a>
                 </li>
                 <li>
+                    <a class="navlink" href="/scenarios/distribute-workload-with-placement">Distribute Workload With Placement</a>
+                </li>
+                <li>
+                    <a class="navlink" href="/scenarios/extend-multicluster-scheduling-capabilities">Extend Multicluster Scheduling Capabilities</a>
+                </li>
+                <li>
                     <a class="navlink" href="/scenarios/extending-managed-clusters">Extend Managed Clusters</a>
+                </li>
+                <li>
+                    <a class="navlink" href="/scenarios/integration-with-argocd">Integration with Argo CD</a>
                 </li>
                 <li>
                     <a class="navlink" href="/scenarios/pushing-kube-api-requests">Pushing Kube API Requests to the Managed Clusters</a>
@@ -189,10 +229,10 @@
             <a class="navlink resource" href="https://github.com/open-cluster-management-io" target="_blank"><i class="bi bi-github"></i><span style="padding-left: 10px;">GitHub</span></a>
         </li>
         <li>
-            <a class="navlink resource" href="https://kubernetes.slack.com/archives/C01GE7YSUUF" target="_blank"><i class="bi bi-slack"></i><span style="padding-left: 10px;">Slack</span></a>
+            <a class="navlink resource" href="https://kubernetes.slack.com/channels/open-cluster-mgmt" target="_blank"><i class="bi bi-slack"></i><span style="padding-left: 10px;">Slack</span></a>
         </li>
         <li>
-            <a class="navlink resource" href="https://www.youtube.com/channel/UC7xxOh2jBM5Jfwt3fsBzOZw" target="_blank"><i class="bi bi-youtube"></i><span style="padding-left: 10px;">YouTube</span></a>
+            <a class="navlink resource" href="https://www.youtube.com/c/OpenClusterManagement" target="_blank"><i class="bi bi-youtube"></i><span style="padding-left: 10px;">YouTube</span></a>
         </li>
         <li>
             <a class="navlink resource" href="https://groups.google.com/g/open-cluster-management" target="_blank"><i class="bi bi-envelope-fill"></i><span style="padding-left: 10px;">Mailing group</span></a>
@@ -209,7 +249,7 @@
     <h1>Contribute</h1>
     <p>We know you&rsquo;ve got great ideas for improving Open Cluster Management. So roll up your sleeves and come join us in the community!</p>
 <h2 id="getting-started">Getting Started</h2>
-<p>All contributions are welcome! Open Cluster Management uses the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2 license</a>. Please open issues for any bugs or problems you encounter, ask questions in the <a href="https://kubernetes.slack.com/archives/C01GE7YSUUF">#open-cluster-mgmt</a> on Kubernetes Slack Channel, or get involved joining the open-cluster-management <a href="https://groups.google.com/g/open-cluster-management">mailing group</a>.</p>
+<p>All contributions are welcome! Open Cluster Management uses the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2 license</a>. Please open issues for any bugs or problems you encounter, ask questions in the <a href="https://kubernetes.slack.com/channels/open-cluster-mgmt">#open-cluster-mgmt</a> on Kubernetes Slack Channel, or get involved joining the open-cluster-management <a href="https://groups.google.com/g/open-cluster-management">mailing group</a>.</p>
 <h2 id="contribute-to-the-source">Contribute to the Source</h2>
 <ul>
 <li>Join the <a href="https://groups.google.com/g/open-cluster-management">Mailing group</a></li>
@@ -228,7 +268,7 @@ contribution. See the <a href="https://github.com/open-cluster-management-io/com
 <h2 id="talk-to-us">Talk to Us</h2>
 <ul>
 <li>Follow the <a href="https://groups.google.com/g/open-cluster-management">Mailing group</a></li>
-<li>Chat with us in the <a href="https://kubernetes.slack.com/archives/C01GE7YSUUF">#open-cluster-mgmt</a> on Kubernetes Slack Channel</li>
+<li>Chat with us in the <a href="https://kubernetes.slack.com/channels/open-cluster-mgmt">#open-cluster-mgmt</a> on Kubernetes Slack Channel</li>
 </ul>
 
 </div>

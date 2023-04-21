@@ -50,6 +50,9 @@
           <li class="nav-item pe-2">
             <a href="/concepts" class="nav-link text-light">Document</a>
           </li>
+          <li class="nav-item pe-2">
+            <a href="/blog" class="nav-link text-light">Blog</a>
+          </li>
           <li class="nav-item dropdown pe-2">
             
             <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">English</a>
@@ -62,7 +65,7 @@
             </ul>
           </li>
           <li class="nav-item pe-2">
-            <a class="nav-link text-light" href="https://www.youtube.com/channel/UC7xxOh2jBM5Jfwt3fsBzOZw" target="_blank">
+            <a class="nav-link text-light" href="https://www.youtube.com/c/OpenClusterManagement" target="_blank">
                 <i class="bi bi-youtube"></i>
             </a>
           </li>
@@ -72,7 +75,7 @@
             </a>
           </li>
           <li class="nav-item pe-2">
-            <a class="nav-link text-light" href="https://kubernetes.slack.com/?redir=%2Farchives%2FC01GE7YSUUF" target="_blank">
+            <a class="nav-link text-light" href="https://kubernetes.slack.com/channels/open-cluster-mgmt" target="_blank">
               <i class="bi bi-slack"></i>
             </a>
           </li>
@@ -102,16 +105,25 @@
                     <a class="navlink" href="/concepts/architecture">Architecture</a>
                 </li>
                 <li>
+                    <a class="navlink" href="/concepts/clusterclaim">ClusterClaim</a>
+                </li>
+                <li>
                     <a class="navlink" href="/concepts/managedcluster">ManagedCluster</a>
                 </li>
                 <li>
                     <a class="navlink" href="/concepts/manifestwork">ManifestWork</a>
                 </li>
                 <li>
+                    <a class="navlink" href="/concepts/managedclusterset">ManagedClusterSet</a>
+                </li>
+                <li>
                     <a class="navlink" href="/concepts/placement">Placement</a>
                 </li>
                 <li>
                     <a class="navlink" href="/concepts/addon">Add-ons</a>
+                </li>
+                <li>
+                    <a class="navlink" href="/concepts/policy">Policy</a>
                 </li>
             </ul>
         </li>
@@ -122,13 +134,13 @@
                     <a class="navlink" href="/getting-started/quick-start">Quick Start</a>
                 </li>
                 <li>
-                    <a class="navlink" href="/getting-started/core">Core Components</a>
+                    <a class="navlink" href="/getting-started/installation">Installation</a>
                     <ul class="collapse">
                         <li>
-                            <a class="navlink" href="/getting-started/core/cluster-manager">Cluster Manager</a>
+                            <a class="navlink" href="/getting-started/installation/start-the-control-plane">Start the Control Plane</a>
                         </li>
                         <li>
-                            <a class="navlink" href="/getting-started/core/register-cluster">Klusterlet Agent</a>
+                            <a class="navlink" href="/getting-started/installation/register-a-cluster">Register a Cluster</a>
                         </li>
                     </ul>
                 </li>
@@ -152,6 +164,25 @@
                         </li>
                     </ul>
                 </li>
+                <li>
+                    <a class="navlink" href="/getting-started/administration">Administration</a>
+                    <ul class="collapse">
+                        <li>
+                            <a class="navlink" href="/getting-started/administration/upgrading">Upgrading</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li id="developer-guides">
+            <a class="navlink" href="/developer-guides">Developer Guides</a>
+            <ul class="collapse">
+                <li>
+                    <a class="navlink" href="/developer-guides/addon">Add-on Developer Guide</a>
+                </li>
+                <li>
+                    <a class="navlink" href="/developer-guides/vscode-extension">VScode Extension</a>
+                </li>
             </ul>
         </li>
         <li id="scenarios">
@@ -161,7 +192,16 @@
                     <a class="navlink" href="/scenarios/deploy-kubernetes-resources">Deploy Kubernetes Resources</a>
                 </li>
                 <li>
+                    <a class="navlink" href="/scenarios/distribute-workload-with-placement">Distribute Workload With Placement</a>
+                </li>
+                <li>
+                    <a class="navlink" href="/scenarios/extend-multicluster-scheduling-capabilities">Extend Multicluster Scheduling Capabilities</a>
+                </li>
+                <li>
                     <a class="navlink" href="/scenarios/extending-managed-clusters">Extend Managed Clusters</a>
+                </li>
+                <li>
+                    <a class="navlink" href="/scenarios/integration-with-argocd">Integration with Argo CD</a>
                 </li>
                 <li>
                     <a class="navlink" href="/scenarios/pushing-kube-api-requests">Pushing Kube API Requests to the Managed Clusters</a>
@@ -189,10 +229,10 @@
             <a class="navlink resource" href="https://github.com/open-cluster-management-io" target="_blank"><i class="bi bi-github"></i><span style="padding-left: 10px;">GitHub</span></a>
         </li>
         <li>
-            <a class="navlink resource" href="https://kubernetes.slack.com/archives/C01GE7YSUUF" target="_blank"><i class="bi bi-slack"></i><span style="padding-left: 10px;">Slack</span></a>
+            <a class="navlink resource" href="https://kubernetes.slack.com/channels/open-cluster-mgmt" target="_blank"><i class="bi bi-slack"></i><span style="padding-left: 10px;">Slack</span></a>
         </li>
         <li>
-            <a class="navlink resource" href="https://www.youtube.com/channel/UC7xxOh2jBM5Jfwt3fsBzOZw" target="_blank"><i class="bi bi-youtube"></i><span style="padding-left: 10px;">YouTube</span></a>
+            <a class="navlink resource" href="https://www.youtube.com/c/OpenClusterManagement" target="_blank"><i class="bi bi-youtube"></i><span style="padding-left: 10px;">YouTube</span></a>
         </li>
         <li>
             <a class="navlink resource" href="https://groups.google.com/g/open-cluster-management" target="_blank"><i class="bi bi-envelope-fill"></i><span style="padding-left: 10px;">Mailing group</span></a>
@@ -222,7 +262,7 @@ cluster like an ordinary kubernetes operator does.</p>
 </li>
 <li>
 <p><strong>Addon Manager</strong>: A kubernetes controller <em>in the hub cluster</em> that applies
-manifests to the managed clusters via the <a href="./manifestwork.md">ManifestWork</a>
+manifests to the managed clusters via the <a href="../manifestwork">ManifestWork</a>
 api. In addition to resource dispatching, the manager can optionally manage
 the lifecycle of CSRs for the addon agents or even the RBAC permission bond
 to the CSRs&rsquo; requesting identity.</p>
@@ -270,12 +310,12 @@ add-on can be registered to the hub cluster by creating:</p>
 </code></pre></div><p>The addon manager running on the hub is taking responsibility of configuring the
 installation of addon agents for each managed cluster. When a user wants to enable
 the add-on for a certain managed cluster, the user should create a
-<code>ManagedClusterAddon</code> resource on the cluster namespace. The name of the
-<code>ManagedClusterAddon</code> should be the same name of the corresponding
+<code>ManagedClusterAddOn</code> resource on the cluster namespace. The name of the
+<code>ManagedClusterAddOn</code> should be the same name of the corresponding
 <code>ClusterManagementAddon</code>. For instance, the following example enables <code>helloworld</code>
 add-on in &ldquo;cluster1&rdquo;:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">apiVersion</span>: addon.open-cluster-management.io/v1alpha1
-<span style="color:#66d9ef">kind</span>: ManagedClusterAddon
+<span style="color:#66d9ef">kind</span>: ManagedClusterAddOn
 <span style="color:#66d9ef">metadata</span>:
   <span style="color:#66d9ef">name</span>: helloworld
   <span style="color:#66d9ef">namespace</span>: cluster1
@@ -293,7 +333,7 @@ kubectl:</p>
 NAMESPACE   NAME                     AVAILABLE   DEGRADED   PROGRESSING
 &lt;cluster&gt;   &lt;addon&gt;                  True                   
 </code></pre></div><p>The addon agent are expected to report its healthiness periodically as long as it&rsquo;s
-running. Also the versioning the addon agent can be reflected in the resources
+running. Also the versioning of the addon agent can be reflected in the resources
 optionally so that we can control the upgrading the agents progressively.</p>
 <h2 id="examples">Examples</h2>
 <p>Here&rsquo;s a few examples of cases where we will need add-ons:</p>
@@ -310,7 +350,7 @@ provides a library for developers to develop an add-ons in open-cluster-manageme
 more easily. Take a look at the <a href="https://github.com/open-cluster-management-io/addon-framework/tree/main/examples/helloworld">helloworld example</a>
 to understand how the add-on framework can be used.</p>
 <h3 id="custom-signers">Custom signers</h3>
-<p>The original Kubernetes CSR api only supports there built-in signers:</p>
+<p>The original Kubernetes CSR api only supports three built-in signers:</p>
 <ul>
 <li>&ldquo;kubernetes.io/kube-apiserver-client&rdquo;</li>
 <li>&ldquo;kubernetes.io/kube-apiserver-client-kubelet&rdquo;</li>
@@ -350,7 +390,7 @@ with properties:
 upon discovering new clusters by setting the <code>InstallStrategy</code> from the
 <a href="https://github.com/open-cluster-management-io/addon-framework">addon-framework</a>.
 On the other hand, the admin can also manually install the addon for the
-clusters by applying <code>ManagedClusterAddon</code> into their cluster namespace.</p>
+clusters by applying <code>ManagedClusterAddOn</code> into their cluster namespace.</p>
 
 </div>
 <script type="text/javascript" src="/clipboard-copy.js"></script>

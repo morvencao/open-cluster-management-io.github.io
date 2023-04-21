@@ -10,11 +10,31 @@
     </url>
     
     <url>
-        <loc>http://open-cluster-management.io/zh/getting-started/core/cluster-manager</loc>
+        <loc>http://open-cluster-management.io/zh/getting-started/installation/start-the-control-plane</loc>
+    </url>
+    
+    <url>
+        <loc>http://open-cluster-management.io/zh/scenarios/deploy-kubernetes-resources</loc>
+    </url>
+    
+    <url>
+        <loc>http://open-cluster-management.io/zh/scenarios/distribute-workload-with-placement</loc>
+    </url>
+    
+    <url>
+        <loc>http://open-cluster-management.io/zh/scenarios/extend-multicluster-scheduling-capabilities</loc>
     </url>
     
     <url>
         <loc>http://open-cluster-management.io/zh/scenarios/extending-managed-clusters</loc>
+    </url>
+    
+    <url>
+        <loc>http://open-cluster-management.io/zh/scenarios/integration-with-argocd</loc>
+    </url>
+    
+    <url>
+        <loc>http://open-cluster-management.io/zh/getting-started/administration/upgrading</loc>
     </url>
     
     <url>
@@ -34,11 +54,11 @@
     </url>
     
     <url>
-        <loc>http://open-cluster-management.io/zh/scenarios/deploy-kubernetes-resources</loc>
+        <loc>http://open-cluster-management.io/zh/concepts/clusterclaim</loc>
     </url>
     
     <url>
-        <loc>http://open-cluster-management.io/zh/getting-started/core/register-cluster</loc>
+        <loc>http://open-cluster-management.io/zh/getting-started/installation/register-a-cluster</loc>
     </url>
     
     <url>
@@ -50,7 +70,11 @@
     </url>
     
     <url>
-        <loc>http://open-cluster-management.io/zh/getting-started/core</loc>
+        <loc>http://open-cluster-management.io/zh/concepts/managedclusterset</loc>
+    </url>
+    
+    <url>
+        <loc>http://open-cluster-management.io/zh/getting-started/installation</loc>
     </url>
     
     <url>
@@ -70,11 +94,27 @@
     </url>
     
     <url>
+        <loc>http://open-cluster-management.io/zh/developer-guides</loc>
+    </url>
+    
+    <url>
         <loc>http://open-cluster-management.io/zh/concepts/addon</loc>
     </url>
     
     <url>
+        <loc>http://open-cluster-management.io/zh/developer-guides/addon</loc>
+    </url>
+    
+    <url>
+        <loc>http://open-cluster-management.io/zh/getting-started/administration</loc>
+    </url>
+    
+    <url>
         <loc>http://open-cluster-management.io/zh/getting-started/integration/app-lifecycle</loc>
+    </url>
+    
+    <url>
+        <loc>http://open-cluster-management.io/zh/concepts/policy</loc>
     </url>
     
     <url>
@@ -110,7 +150,20 @@
     </url>
     
     <url>
+        <loc>http://open-cluster-management.io/zh/blog/access-cluster-in-different-vps</loc>
+    </url>
+    
+    <url>
         <loc>http://open-cluster-management.io/api?go-get=1</loc>
+    </url>
+    <url>
+        <loc>http://open-cluster-management.io/registration?go-get=1</loc>
+    </url>
+    <url>
+        <loc>http://open-cluster-management.io/work?go-get=1</loc>
+    </url>
+    <url>
+        <loc>http://open-cluster-management.io/placement?go-get=1</loc>
     </url>
     <url>
         <loc>http://open-cluster-management.io/clusteradm?go-get=1</loc>
@@ -134,6 +187,15 @@
         <loc>http://open-cluster-management.io/config-policy-controller?go-get=1</loc>
     </url>
     <url>
+        <loc>http://open-cluster-management.io/governance-policy-addon-controller?go-get=1</loc>
+    </url>
+    <url>
+        <loc>http://open-cluster-management.io/governance-policy-framework-addon?go-get=1</loc>
+    </url>
+    <url>
+        <loc>http://open-cluster-management.io/governance-policy-nucleus?go-get=1</loc>
+    </url>
+    <url>
         <loc>http://open-cluster-management.io/governance-policy-propagator?go-get=1</loc>
     </url>
     <url>
@@ -146,6 +208,9 @@
         <loc>http://open-cluster-management.io/governance-policy-template-sync?go-get=1</loc>
     </url>
     <url>
-        <loc>http://open-cluster-management.io/ocm-kustomize-generator-plugins?go-get=1</loc>
+        <loc>http://open-cluster-management.io/policy-generator-plugin?go-get=1</loc>
+    </url>
+    <url>
+        <loc>http://open-cluster-management.io/multicluster-controlplane?go-get=1</loc>
     </url>
 </urlset>
